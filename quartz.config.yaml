@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: WLM SDARP
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -11,14 +11,16 @@ configuration:
   ignorePatterns:
     - private
     - templates
+    - drafts
     - .obsidian
+    - .trash
   theme:
     fontOrigin: googleFonts
-    cdnCaching: true
+    cdnCaching: false
     typography:
-      header: Schibsted Grotesk
+      header: Montserrat
       body: Source Sans Pro
-      code: IBM Plex Mono
+      code: Roboto Mono
     colors:
       lightMode:
         light: "#faf8f8"
