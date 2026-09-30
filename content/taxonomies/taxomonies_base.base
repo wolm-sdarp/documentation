@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.tags.contains("taxonomy")
+    - file.name != "taxonomies"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - taxonomy
+      - parent
+      - level
+      - tags
+    sort: []
