@@ -1,15 +1,16 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: WLM SDARP
+  pageTitle: WoLM SDARP
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: angelgardt.github.io/wlm-sdarp-docs
+  baseUrl: wolm-sdarp.github.io/documentation
   ignorePatterns:
     - private
+    - tech
     - templates
     - drafts
     - .obsidian
