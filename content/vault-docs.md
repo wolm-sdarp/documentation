@@ -28,3 +28,12 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
 | `quartz.config.yaml`         |                                                                                                                                               |
 | `quartz.ts`                  |                                                                                                                                               |
 | `tsconfig.json`              |                                                                                                                                               |
+
+## Клонирование проекта
+
+1. Создайте папку, в которой будет хранится содержимое проекта
+```bash
+mkdir WoLM_SDARP_PROJ
+cd WoLM_SDARP_PROJ
+
+```

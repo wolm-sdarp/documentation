@@ -2,7 +2,7 @@
 ---
 # Инструкция по работе с проектом WLM_SDARP_PROJ
 
-> Документ описывает, как нам с Claude работать вместе продуктивно: что нужно рассказать, как устроить файлы, какие правила и ограничения действуют. Пункты в `[квадратных скобках]` — то, что нужно заполнить вам. Заполненную версию имеет смысл положить в корень проекта как `README_PROJECT.md` или вставить в Project instructions.
+> Документ описывает, как продуктивно работать вместе с Claude что нужно рассказать, как устроить файлы, какие правила и ограничения действуют.
 
 ***
 ## 1. Что нужно рассказать о проекте (заполнить один раз)
@@ -53,7 +53,7 @@ Cоздать серию качественных книг и дополните
 #### Стиль кода, линтеры, форматтеры
 Без уточнения.
 #### Ссылка на организации, репозитории и ветки
-> Подробное описание см. [[#2.1. Структура папки проекта]]
+> Подробное описание см. [[#2.1. Структура директории проекта]]
 - GH Organization: https://github.com/wolm-sdarp
 	- `book0` repo: https://github.com/wolm-sdarp/book0
 	- `book1` repo: https://github.com/wolm-sdarp/book1
@@ -89,29 +89,30 @@ Cоздать серию качественных книг и дополните
 
 #### Принципы
 - в корне проекта `WLM_SDARP_PROJ` лежат только папки, файлов нет
-- документация для внутреннего пользования (в том числе для Claude) лежит в `sdarp-docs/private/`
+- документация для внутреннего пользования (в том числе для Claude) лежит в `sdarp-docs/tech/`
 #### Общая схема ключевых файлов и папок
 ```
 WLM_SDARP_PROJ/
+├── gh-profile/           # project profile (tech repo)
 ├── inbox/                # unsorted inbox & drafts
 ├── hub/                  # project hub & user entry point
 │	└── README.md
 ├── design/               # visual style excluded from results
-├── sdarp-docs/           # project documentation vault
+├── documentation/           # project documentation vault
 │	├── content/
 │	├── tech/
 │	├── private/
 │	├── drafts/
 │	└── README.md
-├── sdarp-annex/
+├── annex/
 │	└── README.md
-├── sdarp-assessment0/
+├── assessment0/
 │	└── README.md
-├── sdarp-assessment1/
+├── assessment1/
 │	└── README.md
-├── sdarp-book0/
+├── book0/
 │	└── README.md
-├── sdarp-book1/
+├── book1/
 │	└── README.md
 ├── claude/
 └── archive/
@@ -128,24 +129,25 @@ WLM_SDARP_PROJ/
 - Remote : ссылка на связанный удаленный репозиторий (для Type:`repo`)
 - Description : описание содержимого
 ##### Table
-| Folder                | Type              | Remote                                                                         | Description                                                                                            |
-| :-------------------- | :---------------- | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| **inbox**             | `dir`             | —                                                                              | Сырые входящие материалы, ещё не разобранные                                                           |
-| **design**            | `dir`             | —                                                                              | Элементы визуального стиля, не включенные непосредственно в материалы проекта (аватары, баннеры и др.) |
-| **hub**               | `quarto` / `repo` | [wolm-sdarp.github.io](https://github.com/wolm-sdarp/wolm-sdarp.github.io.git) | Хаб проекта: входная точка, автор(ы) и другое.                                                         |
-| **sdarp-docs**        | `vault` / `repo`  | [documentation](https://github.com/wolm-sdarp/documentation.git)               | Документация всего проекта. Пишется в Obsidian, публикуется через Quartz.                              |
-| **sdarp-annex**       | `quarto` / `repo` | [annex](https://github.com/wolm-sdarp/annex.git)                               | Дополнительные материалы проекта, публикуемые для широкого круга читателей                             |
-| **sdarp-assessment0** | `quarto` / `repo` | [assessment1](https://github.com/wolm-sdarp/assessment0.git)                   | Формы контроля для нулевой книги проекта.                                                              |
-| **sdarp-assessment1** | `quarto` / `repo` | [assessment1](https://github.com/wolm-sdarp/assessment1.git)                   | Формы контроля для первой книги проекта.                                                               |
-| **sdarp-assessment2** | `quarto` / `repo` | —                                                                              | Формы контроля для второй книги проекта. *Пока отсутствует.*                                           |
-| **sdarp-assessment3** | `quarto` / `repo` | —                                                                              | Формы контроля для третьей книги проекта. *Пока отсутствует.*                                          |
-| **sdarp-book0**       | `quarto` / `repo` | [book0](https://github.com/wolm-sdarp/book0.git)                               | Нулевая книга проекта. Математика для анализа данных.                                                  |
-| **sdarp-book1**       | `quarto` / `repo` | [book1](https://github.com/wolm-sdarp/book1.git)                               | Первая книга проекта. Статистика и анализ данных. Фреквентизм.                                         |
-| **sdarp-book2**       | dir               | —                                                                              | Вторая книга проекта. Статистика и анализ данных. Байесовский подход. *Пока отсутствует*               |
-| **sdarp-book3**       | dir               | —                                                                              | Третья книга проекта. Анализ текстовых данных. *Пока отсутствует*                                      |
-| **manim**             | `repo`            | —                                                                              | Скрипты генерации видеоиллюстраций через `manim` (Python). *Пока отсутствует.*                         |
-| **claude**            | `dir`             | —                                                                              | Ауптупы с результатами работы Claude.                                                                  |
-| **archive**           | `dir`             | —                                                                              | Архив файлов, которые больше не используются, но ещё могут пригодится.                                 |
+| Folder            | Type              | Remote                                                                         | Description                                                                                            |
+| :---------------- | :---------------- | :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **gh-profile**    | `repo`            | [.github](https://github.com/wolm-sdarp/.github)                               | Технический репозиторий для отображения README организации                                             |
+| **inbox**         | `dir`             | —                                                                              | Сырые входящие материалы, ещё не разобранные                                                           |
+| **design**        | `dir`             | —                                                                              | Элементы визуального стиля, не включенные непосредственно в материалы проекта (аватары, баннеры и др.) |
+| **hub**           | `quarto` / `repo` | [wolm-sdarp.github.io](https://github.com/wolm-sdarp/wolm-sdarp.github.io.git) | Хаб проекта: входная точка, автор(ы) и другое.                                                         |
+| **documentation** | `vault` / `repo`  | [documentation](https://github.com/wolm-sdarp/documentation.git)               | Документация всего проекта. Пишется в Obsidian, публикуется через Quartz.                              |
+| **annex**         | `quarto` / `repo` | [annex](https://github.com/wolm-sdarp/annex.git)                               | Дополнительные материалы проекта, публикуемые для широкого круга читателей                             |
+| **assessment0**   | `quarto` / `repo` | [assessment1](https://github.com/wolm-sdarp/assessment0.git)                   | Формы контроля для нулевой книги проекта.                                                              |
+| **assessment1**   | `quarto` / `repo` | [assessment1](https://github.com/wolm-sdarp/assessment1.git)                   | Формы контроля для первой книги проекта.                                                               |
+| **assessment2**   | `quarto` / `repo` | —                                                                              | Формы контроля для второй книги проекта. *Пока отсутствует.*                                           |
+| **assessment3**   | `quarto` / `repo` | —                                                                              | Формы контроля для третьей книги проекта. *Пока отсутствует.*                                          |
+| **book0**         | `quarto` / `repo` | [book0](https://github.com/wolm-sdarp/book0.git)                               | Нулевая книга проекта. Математика для анализа данных.                                                  |
+| **book1**         | `quarto` / `repo` | [book1](https://github.com/wolm-sdarp/book1.git)                               | Первая книга проекта. Статистика и анализ данных. Фреквентизм.                                         |
+| **book2**         | dir               | —                                                                              | Вторая книга проекта. Статистика и анализ данных. Байесовский подход. *Пока отсутствует*               |
+| **book3**         | dir               | —                                                                              | Третья книга проекта. Анализ текстовых данных. *Пока отсутствует*                                      |
+| **manim**         | `repo`            | —                                                                              | Скрипты генерации видеоиллюстраций через `manim` (Python). *Пока отсутствует.*                         |
+| **claude**        | `dir`             | —                                                                              | Ауптупы с результатами работы Claude.                                                                  |
+| **archive**       | `dir`             | —                                                                              | Архив файлов, которые больше не используются, но ещё могут пригодится.                                 |
 
 #### Ключевые файлы для контекста
 | File                                   | Description           |
