@@ -4,7 +4,8 @@ description: Техническая документация всего прое
 # Tech Files
 ***
 
-| Файл                          | Описание                    |
-| ----------------------------- | --------------------------- |
-| [[LLM_INSTRUCTIONS_RU]]            | Инструкции для Claude       |
-| [[tech/CHANGELOG\|CHANGELOG]] | Журнал глобальных изменений |
+| File                          | Description                               |
+| ----------------------------- | ----------------------------------------- |
+| [[LLM_INSTRUCTIONS_RU]]       | Project instructions for LLM (in Russian) |
+| [[LLM_INSTRUCTIONS_EN]]       | Project instructions for LLM (in English) |
+| [[tech/CHANGELOG\|CHANGELOG]] | Global changes journal                    |

@@ -10,6 +10,7 @@ configuration:
   baseUrl: wolm-sdarp.github.io/documentation
   ignorePatterns:
     - private
+    - db
     - tech
     - templates
     - drafts
