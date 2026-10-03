@@ -14,6 +14,7 @@ configuration:
     - tech
     - templates
     - drafts
+    - /content/content.md
     - .obsidian
     - .trash
   theme:
