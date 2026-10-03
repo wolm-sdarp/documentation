@@ -1,7 +1,7 @@
 ---
-title: Документация по GitHub проекта
+title: Git и GitHub проекта
 aliases:
-  - Документация по GitHub проекта
+  - Git и GitHub проекта
 ---
 > Это документация по работе с GitHub'ом проекта WoLM SDARP.
 > Документацию по самой платформе GitHub от разработчиков можно найти [тут](https://docs.github.com/ru).
