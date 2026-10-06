@@ -15,9 +15,9 @@ aliases:
 | Репозиторий                | Описание                                  |
 | -------------------------- | ----------------------------------------- |
 | [`.git`]()                 | [[org-profile-docs\|Профиль организации]] |
+| [`wolm-sdarp.github.io`]() | Хаб проекта                               |
 | [`documentation`]()        | [[vault-docs\|Документация проекта]]      |
 | [`kit`]()                  | TBA                                       |
-| [`wolm-sdarp.github.io`]() | Хаб проекта                               |
 | [`book0`]()                | Книга 0: Математика для анализа данных    |
 | [`book1`]()                | Книга 1: Статистика и анализ данных       |
 | [`assessment0`]()          | Формы контроля к Книге 0                  |
@@ -26,8 +26,23 @@ aliases:
 
 ### Рекомендуемая локальная структура
 
+| Директория      | Связанный репозиторий      | Тег     |
+| --------------- | -------------------------- | ------- |
+| `org`           | [`.git`]()                 | Orange  |
+| `hub`           | [`wolm-sdarp.github.io`]() | Orange  |
+| `documentation` | [`documentation`]()        | Blue    |
+| `kit`           | [`kit`]()                  | TBA     |
+| `book0`         | [`book0`]()                | Green   |
+| `book1`         | [`book1`]()                | Green   |
+| `assessment0`   | [`assessment0`]()          | Green   |
+| `assessment1`   | [`assessment1`]()          | Green   |
+| `annex`         | [`annex`]()                | Green   |
+| `design`        | —                          | Yellow  |
+| `archive`       | —                          | No Tags |
+| `claude`        | —                          | No Tags |
 
 ## GitHub Projects
+
 В организации существует проектный менеджмент через [GitHub Projects](https://github.com/orgs/wolm-sdarp/projects).
 
 [[gh-issues-docs]]
