@@ -1,0 +1,21 @@
+---
+title: Профиль WoLM SDARP Organization
+aliases:
+  - Профиль WoLM SDARP Organization
+  - Профиль организации
+---
+- Хранит Community standards
+	- README.md организации
+	- Code of Conduct
+	- Contributing
+	- License
+	- Security Policy
+	- Issue templates
+	- Pull request template
+	- Accessibility
+- Also
+	- Private vulnerability reporting
+	- Dependabot alerts
+	- Code seaming alerts
+	- Secret seaming alerts
+	- Code quality findings
