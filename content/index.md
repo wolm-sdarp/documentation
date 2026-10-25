@@ -12,5 +12,5 @@ title: WoLM SDARP | Документация проекта
 | [[assessment-docs]] |                                                                                                               |
 | [[git-gh-docs]]     |                                                                                                               |
 | [[vault-docs]]      |                                                                                                               |
-|                     |                                                                                                               |
+| [[community-docs]]  |                                                                                                               |
 

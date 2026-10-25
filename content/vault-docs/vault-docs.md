@@ -64,3 +64,23 @@ cd WoLM_SDARP_PROJ
 ## Удаление файлов
 
 В хранилище настроено удаление файлов в папку`.trash`, чтобы при необходимости файлы можно было восстановить без выхода в системную Корзину, а также чтобы они не были случайной удалены при очистке системной Корзины.
+
+## Плагины
+### Критические
+- Git
+- Folder notes
+- Relay Comments
+- Dataview
+
+### Дополнительные
+- Advanced Tables
+- Calendar
+- Dragger
+- Iconize
+- Kanban ??
+- Latex Suite ??
+- Linter
+- Minimal Theme Settings
+- Ordered List Style ??
+- Paste image rename
+- Tag Wrangler
