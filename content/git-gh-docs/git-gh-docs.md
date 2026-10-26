@@ -12,17 +12,17 @@ aliases:
 
 ## GitHub Repositories
 
-| Репозиторий                | Тип    | Описание                                                                                                |
-| -------------------------- | ------ | ------------------------------------------------------------------------------------------------------- |
-| [`.git`]()                 | repo   | [[org-profile-docs\|Профиль организации]]: технический репозиторий для хранения документации сообщества |
-| [`wolm-sdarp.github.io`]() | quarto | Хаб проекта: входная точка, информации о проекте и авторах и другое на сайте проекта.                   |
-| [`documentation`]()        | vault  | [[vault-docs\|Документация проекта]]                                                                    |
-| [`kit`]()                  | repo   | *TBA*                                                                                                   |
-| [`book0`]()                | quarto | Книга 0: Математика для анализа данных                                                                  |
-| [`book1`]()                | quarto | Книга 1: Статистика и анализ данных                                                                     |
-| [`assessment0`]()          | quarto | Формы контроля к Книге 0                                                                                |
-| [`assessment1`]()          | quarto | Формы контроля к Книге 1                                                                                |
-| [`annex`]()                | quarto | Дополнительные материалы проекта, публикуемые для широкого круга читателей                              |
+| Репозиторий                                                                      | Тип    | Описание                                                                                                |
+| -------------------------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------- |
+| [`.git`](https://github.com/wolm-sdarp/.github.git)                              | repo   | [[org-profile-docs\|Профиль организации]]: технический репозиторий для хранения документации сообщества |
+| [`wolm-sdarp.github.io`](https://github.com/wolm-sdarp/wolm-sdarp.github.io.git) | quarto | Хаб проекта: входная точка, информации о проекте и авторах и другое на сайте проекта.                   |
+| [`documentation`](https://github.com/wolm-sdarp/documentation.git)               | vault  | [[vault-docs\|Документация проекта]]                                                                    |
+| [`kit`](https://github.com/wolm-sdarp/kit.git)                                   | repo   | *TBA*                                                                                                   |
+| [`book0`](https://github.com/wolm-sdarp/book0.git)                               | quarto | Книга 0: Математика для анализа данных                                                                  |
+| [`book1`](https://github.com/wolm-sdarp/book1.git)                               | quarto | Книга 1: Статистика и анализ данных                                                                     |
+| [`assessment0`](https://github.com/wolm-sdarp/assessment0.git)                   | quarto | Формы контроля к Книге 0                                                                                |
+| [`assessment1`](https://github.com/wolm-sdarp/assessment1.git)                   | quarto | Формы контроля к Книге 1                                                                                |
+| [`annex`](https://github.com/wolm-sdarp/annex.git)                               | quarto | Дополнительные материалы проекта, публикуемые для широкого круга читателей                              |
 
 ### Локальная структура
 
